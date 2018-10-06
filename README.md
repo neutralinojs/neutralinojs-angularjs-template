@@ -9,6 +9,7 @@ A neutralino app made with Angularjs which could be used as a template!
 <hr/>
 
 ## Screenshot
+![NeutralinoJS_AngularJS_Template](https://raw.githubusercontent.com/octalpixel/neutralinojs-angularjs-template/master/neutralino_angular_js.png)
 
 
 [View More Samples](https://github.com/neutralinojs/neutralinojs-desktop-samples) <br/>

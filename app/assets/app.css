@@ -21,28 +21,54 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE. */
 
-#neutralinoapp {
+.about-content {
+    width: 500px;
+    display: flex;
+    margin: auto;
     text-align: center;
 }
 
-#neutralinoappLinks {
-    margin: auto
+
+section#homeSection {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
 }
 
-#neutralinoapp h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    color: #000000;
-}
-#neutralinoapp a {
-    margin-left: 12px;
-}
-#description {
-    width: 500px;
-    text-align: justify;
-    margin: auto
+section#homeSection > .container > * {
+    margin: 24px 0;
 }
 
-.btnCustom{
-    margin: 20px
+section.ram-section {
+    text-align: center;
+}
+
+section.ram-section > * {
+    margin: 24px 0;
+}
+
+section#main-content {
+    text-align: center;
+}
+
+.button-holder {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.image-logos > img {
+    display: block;
+    height: 150px;
+}
+
+.home-container>* {
+    margin: 24px 0;
 }

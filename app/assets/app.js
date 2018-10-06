@@ -20,42 +20,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-
+let myapp = {
+    // myfunction : () => document.getElementById('info').innerHTML = `${NL_NAME} is running on port ${NL_PORT} inside ${NL_OS}.`
+    myfunction : () => console.log(`${NL_NAME} is running on port ${NL_PORT} inside ${NL_OS}.`)
+    
+};
+    
 
 Neutralino.init({
     load: () => {
-        var app = angular.module("app", ["ngRoute"]);
-        app.config(function($routeProvider) {
-            $routeProvider
-            .when("/", {
-                template : `
-                <div>
-                <h3>{{NL_NAME}} is running on port {{NL_PORT}} inside {{NL_OS}}</h3>
-                <button type="button" class="btn btn-success btnCustom"  onClick={window.location='#!more'}>More Info</button>
-                </div>
-                `,
-                controller : function($scope) {
-                    $scope.NL_NAME = NL_NAME;
-                    $scope.NL_OS = NL_OS;
-                    $scope.NL_PORT = NL_PORT;
-                }
-            })
-            .when("/more", {
-                template : `
-                <div>
-                <div id="description">
-                  <p>Welcome to your NeutralinoJs app, using a ReactJs template!
-                    Follow out quick start guide, found<a target="_blank" href="https://neutralinojs.github.io/docs/#/gettingstarted/quickstart">https://neutralinojs.github.io/docs/#/gettingstarted/quickstart</a> to build your own NeutralinoJs App!
-                    To get familiar with NeutralinoJs, visit our docs,<a target="_blank" href="https://neutralinojs.github.io/docs">here</a>.
-                    To learn more about Vue, visit vuejs.org/guide.
-                    Visit our repo<a target="_blank" href="https://github.com/neutralinojs">here</a> , and give us a big star!
-                  </p>
-                </div>
-                <button type="button" class="btn btn-success btnCustom"  onClick="window.location='#!'">Back</button>
-              </div>
-                `
-            });
-        });
+        myapp.myfunction();
     },
     pingSuccessCallback : () => {
         console.log("ping success");
